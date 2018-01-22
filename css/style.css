@@ -82,20 +82,26 @@ body {
 .countedFieldSet > legend {
     font-weight: bold; 
     font-size: 1em;
-    color: #6e768f;     
+    color: #6e768f;
+    position: relative;
 }
 
 .countedFieldSet > legend::before {
     counter-increment: setNumb;
-    content: counter(setNumb) "      ";
+    content: counter(setNumb);
     border-radius: 50%;
-    width: 70px;
-    height: 50px;
-    padding: 4px;
+    width: 30px; 
+    height: 30px; 
+    box-sizing: border-box;
+    /* padding: 4px; */
+    line-height: 30px;
     border: 1px solid #6e768f;
     color: #6e768f;     
     text-align: center;
     font-size: 0.8em;
+    left: -34px;
+    top: -7px;
+    position: absolute;
 }
 
 .obj-type-image {
@@ -110,7 +116,6 @@ body {
     flex-direction: row;
     justify-content: space-between;
     max-width: 670px;
-
     /*float:left;*/
 }
 
