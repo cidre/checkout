@@ -56,6 +56,7 @@ footer {
 }    
 
 body {
+    font-family: ProximaNova, Arial;
     counter-reset: setNumb;
 }
 
@@ -78,17 +79,23 @@ body {
 }
     
 
-h3::before {
+.countedFieldSet > legend {
+    font-weight: bold; 
+    font-size: 1em;
+    color: #6e768f;     
+}
+
+.countedFieldSet > legend::before {
     counter-increment: setNumb;
     content: counter(setNumb) "      ";
     border-radius: 50%;
     width: 70px;
     height: 50px;
     padding: 4px;
-    border: 1px solid #666;
-    color: #666;
+    border: 1px solid #6e768f;
+    color: #6e768f;     
     text-align: center;
-    font: 16px Arial, sans-serif;
+    font-size: 0.8em;
 }
 
 .obj-type-image {
@@ -119,7 +126,6 @@ h3::before {
 }
 
 .objTypeSelector label span {
-    font-family: ProximaNova, Arial;
     font-weight: bold; 
     font-size: 0.8em;     
     padding-bottom: 13px;
