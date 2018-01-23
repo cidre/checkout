@@ -66,6 +66,7 @@ body {
 
 .fieldsetObjType{
     text-align: center;
+    border: 0;
 }
 
 .fa {
@@ -78,6 +79,9 @@ body {
     position: relative;    
 }
     
+.countedFieldSet {
+    border: 0;
+}
 
 .countedFieldSet > legend {
     font-weight: bold; 
@@ -138,12 +142,14 @@ body {
     color:  #a5abc5;
 }
 
-.objTypeSelector label input {
+.objTypeSelector input {
     position:absolute;
-    top:-20px;
+    display: none;
+    /* top:100px; */
+    
 }
 
-.objTypeSelector input:checked + span {
+.objTypeSelector input[type="radio"]:checked+label {
     color: #7fade3;
     /*background-color:#404040;
     border-style: solid;
