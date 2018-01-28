@@ -64,6 +64,36 @@ body {
     text-align: center;
 }
 
+.helpCenter{
+    max-width: 265px;
+    text-align: left;
+    padding: 20px 50px 20px 70px;
+    color: #6e768f;
+}
+
+.helpCenter h3{
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+.helpCenter p{
+    font-size: 11px;
+    color: #a5abc5;
+}
+
+.helpCenter address{
+    font-style: normal;
+    font-size: 13px;
+}
+
+.helpCenter a{
+    text-decoration: none;
+    color: #6e768f;
+}
+
+.helpCenter a:hover {
+    text-decoration: underline;
+}
 .fieldsetObjType{
     text-align: center;
     border: 0;
