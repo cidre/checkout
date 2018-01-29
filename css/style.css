@@ -11,9 +11,14 @@ header {
     height: 150px;
 }
 
-.header-button {
-    width: 100px;
+.action-button {
+    width: 105px;
     height: 35px;
+    font-family: ProximaNova, Arial;
+    font-size: 8px;
+    text-transform: uppercase; 
+    color: #a5abc5;
+    background-color: #eceef4;
 }
 
 .logo {
@@ -24,7 +29,6 @@ header {
 .btn {
   padding: 8px, 16px;
   display: inline-block;
-  font-size: 14px;
   text-align: center;
   vertical-align: middle;
   text-decoration: none;
@@ -32,7 +36,7 @@ header {
   user-select: none;
   background-image: none;
   border: 1px solid;
-  border-radius: 4px;
+  border-radius: 3px;
 }
 
 
@@ -74,8 +78,21 @@ body {
 .helpCenter h3{
     text-transform: uppercase;
     font-size: 12px;
+    position: relative;
 }
 
+.helpCenter h3:before {
+    content: "\f1cd"; /*fa-life-ring*/
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    position: absolute;
+    background-color: #fff;
+    top: 0;
+    left: 0;
+    transform: translate(-200%, -25%);
+    font-size: 1.5em;
+    border-radius: 50%;
+}
 .helpCenter p{
     font-size: 11px;
     color: #a5abc5;
@@ -102,16 +119,19 @@ body {
 .fa {
     font-family: FontAwesome;
     color: #c1c1c1;
+    position: relative;    
+}
+
+.fa-user {
+    font-weight: 900;
 }
 
 .fa-cloud-upload {
     content: '\f0ee';
-    position: relative;    
 }
     
 .fa-check-circle {
     content: '\f058';
-    position: relative;    
 }
 
 .countedFieldSet {
@@ -202,8 +222,6 @@ body {
     background-color: #fff;
     top: 0;
     right: 0;
-    right: 0px;
-    top: 0px;
     transform: translate(50%, -50%);
     font-size: 1.5em;
     border-radius: 50%;
