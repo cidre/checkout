@@ -1,23 +1,31 @@
+body {
+    font-family: ProximaNova, Arial;
+    counter-reset: setNumb;
+    background-color: #eceef4;
+}
+
 address{
     font-style: normal;
 }
 
 header {
-    background-color: #eceef4;
 }
 
 .header-container {
+    max-width: 800px;
+    height: 150px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     /* text-align: center; */
     align-items: center;
-    height: 150px;
+    margin: auto;
 }
 
 .action-button {
+    padding: 10px 16px;
     width: 105px;
-    height: 35px;
+    /*max-height: 35px; */
     font-family: ProximaNova, Arial;
     font-size: 8px;
     text-transform: uppercase; 
@@ -31,37 +39,87 @@ header {
 }
 
 .logo {
-  width: 74px;
-  height: 74px; 
+    width: 74px;
+    height: 74px; 
 }
 
 .btn {
-  padding: 8px, 16px;
-  display: inline-block;
-  text-align: center;
-  vertical-align: middle;
-  text-decoration: none;
-  cursor: pointer;
-  user-select: none;
-  background-image: none;
-  border: 1px solid;
-  border-radius: 3px;
-}
-
-body {
-    font-family: ProximaNova, Arial;
-    counter-reset: setNumb;
-}
-
-.formContainer{
+    display: inline-block;
     text-align: center;
+    vertical-align: middle;
+    text-decoration: none;
+    cursor: pointer;
+    user-select: none;
+    background-image: none;
+    border: 1px solid;
+    border-radius: 3px;
 }
 
+.form-container{
+    background-color: white; 
+    text-align: center;
+    max-width: 800px;
+    margin: auto;
+    margin-bottom: 82px;
+    border: 1.5px solid #a5abc5;   
+    border-radius: 3px;
+}
+
+.order-help-wrapper{
+    display: flex;
+    flex-direction: row;
+}
+
+.order{
+    flex-basis: 70%;
+    display: flex;
+    flex-direction: row;
+}
+
+.order-details table{
+  table-layout: fixed;
+  width: 90%;
+  border-collapse: collapse;
+  border: 1px solid purple;   
+}
+
+.order-details tr{
+    font-family: ProximaNova, Arial;
+    text-align: left;
+}
+.order-details th{
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 8px;
+    padding: 4px;
+}
+
+.order-details td{
+    font-size: 9px;
+    padding: 4px;
+}
+
+.order-buttons{
+    display: flex;
+    flex-direction: column;
+}
+
+.order-buttons > * {
+  /*flex: 1 1 100%; */
+}
 .helpCenter{
+    flex-basis: 30%;
     max-width: 265px;
     text-align: left;
     padding: 20px 50px 20px 70px;
     color: #6e768f;
+}
+
+h2{
+    text-transform: uppercase;
+    font-size: 9px;
+    position: relative;
+    letter-spacing: 0.8px; 
 }
 
 h3{
